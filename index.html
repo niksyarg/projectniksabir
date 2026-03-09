@@ -1,11 +1,111 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>PayAPI Pricing</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Public+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Welcome to my website</h1>
+
+    <div class="bg-circle"></div>
+
+    <header class="header container">
+        <a href="/" class="header__logo-link">
+            <img src="logo.svg" alt="PayAPI Logo" class="header__logo">
+        </a>
+        <nav class="header__nav">
+            <a href="#">Pricing</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+        <button class="button button--pink">Schedule a Demo</button>
+    </header>
+
+    <main class="container main-content">
+        <h1 class="main-title">Pricing</h1>
+
+        <section class="pricing-grid">
+            <article class="card">
+                <h2 class="card__title">Free Plan</h2>
+                <p class="card__description">Build and test using our core set of products with up to 100 API requests</p>
+                <div class="card__price">$0.00</div>
+                <ul class="card__features">
+                    <li class="active">Transactions</li>
+                    <li class="active">Auth</li>
+                    <li class="active">Identity</li>
+                    <li class="inactive">Investments</li>
+                    <li class="inactive">Assets</li>
+                    <li class="inactive">Liabilities</li>
+                    <li class="inactive">Income</li>
+                </ul>
+                <button class="card__button">Request Access</button>
+            </article>
+
+            <article class="card">
+                <h2 class="card__title">Basic Plan</h2>
+                <p class="card__description">Launch your project with unlimited requests and no contractual minimums</p>
+                <div class="card__price">$249.00</div>
+                <ul class="card__features">
+                    <li class="active">Transactions</li>
+                    <li class="active">Auth</li>
+                    <li class="active">Identity</li>
+                    <li class="active">Investments</li>
+                    <li class="active">Assets</li>
+                    <li class="inactive">Liabilities</li>
+                    <li class="inactive">Income</li>
+                </ul>
+                <button class="card__button">Request Access</button>
+            </article>
+
+            <article class="card">
+                <h2 class="card__title">Premium Plan</h2>
+                <p class="card__description">Get tailored solutions, volume pricing, and dedicated support for your team</p>
+                <div class="card__price">$499.00</div>
+                <ul class="card__features">
+                    <li class="active">Transactions</li>
+                    <li class="active">Auth</li>
+                    <li class="active">Identity</li>
+                    <li class="active">Investments</li>
+                    <li class="active">Assets</li>
+                    <li class="active">Liabilities</li>
+                    <li class="active">Income</li>
+                </ul>
+                <button class="card__button">Request Access</button>
+            </article>
+        </section>
+
+        <section class="cta container">
+            <h2 class="cta__title">Ready to start?</h2>
+            <form class="cta__form">
+                <input type="email" class="cta__input" placeholder="Enter email address">
+                <button type="submit" class="button button--pink">Schedule a Demo</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__content">
+            <div class="footer__logo-nav">
+                <a href="/" class="footer__logo-link">
+                    <img src="logo.svg" alt="PayAPI Logo" class="footer__logo">
+                </a>
+                <nav class="footer__nav">
+                    <a href="#">Pricing</a>
+                    <a href="#">About</a>
+                    <a href="#">Contact</a>
+                </nav>
+            </div>
+            <div class="footer__socials">
+                <a href="#"><img src="facebook.svg" alt="Facebook"></a>
+                <a href="#"><img src="twitter.svg" alt="Twitter"></a>
+                <a href="#"><img src="linkedin.svg" alt="LinkedIn"></a>
+            </div>
+        </div>
+    </footer>
+
 </body>
 </html>
